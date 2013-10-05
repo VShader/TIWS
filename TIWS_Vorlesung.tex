@@ -11,10 +11,10 @@ Teamarbeit!
 Komplexe Systeme entwickeln!
 
 Ordnung: \leq \subsetneq MxM		(5,3) nicht
-Menge: M							(3,5) ja
+Menge: M							(3,5) \check{mark}
 
-Bsp.: M={1,2,3} herkömmliches <
-	  L={(1,2),(2,2),(3,3),(2,1),(3,1),(3,2)} \cup <
+Bsp.: M={1,2,3} herkömmliches \lt
+	  L={(1,2),(2,2),(3,3),(2,1),(3,1),(3,2)} \cup \surd
 	  
 	  
 	  
@@ -35,5 +35,145 @@ Viele					1 mal
 
 Aussagenlogik:
 Induktionsanfang -atomare Formel: "Hildegard hat blonde Haare!" \widehat{=} A Wahr oder Falsch
-n->n+1			 -A, B atomare Formel => (A\lorB), (A\landB), \lnotA
+n->n+1			 -A, B atomare Formel => (A\lor B), (A\land B), \lnot A
+					   zusammengesetzte		or			and		not
+					   						zusammengesetzte Formeln
+
+\begin{tabular}{lcr}
+A & B & A \lor B & A \land B & \lnot A \\
+0 & 0 & 0 & 0 & 1 \\ 
+0 & 1 & 1 & 0 & 1 \\		  0      1				 0		1
+1 & 0 & 1 & 0 & 0 \\		((A \lor B) \land (\lnot A \lor B))
+1 & 1 & 1 & 1 & 0 \\			1					1
+\end{tabular}							1
+							A=0, B=1
+							Verschachtelungstiefe = 3
+							
+Ist Aussagenlogik entscheidbar?
+Das heißt ist folgendes Problem algotithmisch lösbar:
+Eingabe:	Eine beliebige aussagenlogische Formel
+Problem:	Gibt es eine Belegung bel.: Atome->{0,1}, so dass bel(F)=1 ?
+
+Problem ist entscheidbar durch Entscheidungsalgorithmus.
+Einfach alle 2$^n$ Belegungen austesten.
+Falls eine 1 liefert: output ("JA")
+			   sonst: output ("NEIN")
+			   
+Aussagenlogik nicht aussagekräftig genug
+Prädikatenlogik 1. Stufe
+Problem: Unentscheidbar!!!
+
+Quantoren: \exists , \forall
+Variablen: x, g
+Funktoren: +, -
+Relationen: |x-x0| <delta
+
+	Problem
+---------------------------------
+
+
+Grundlagen:
+
+Prolog basiert auf Hornklausellogik \leq Prädikatenlogik 1. Stufe
+Programme bestehen aus
+Fakten: groß(erwin).
+Regeln: klaus liebt alle, die groß und schlank sind.
+		liebt(klaus,x):- groß(x),schlank(x).
+_______
+Anfrage: ?- liebt(klaus,erwin).
+
+
+3. Prolog-Grundlagen
+
+-Syntax von Prolog und Queries
+-Wissensbasis
+-erste Programmiertechniken kennen lernen
+induktiv Programmieren
+
+Fakten:
+1. Form von Prolog-Statements
+Relation vater ist 2-stellige Relation
+bisher nur Paar(abraham, isaak)in Relation vater
+hier: Relation beschrieben durch Aufzählung der Elemente
+Semantik durch Kommentar festlegen:
+%vater(X,Y): X ist Vater von Y.
+Query: "Ist abraham Vater von isaak?"
+		(abraham,isaak)\in vater?
+		
+Def.: (Relation, Prädikat)
+a) Eine n-stellige Relation über Menge M ist eine Teilmenge des n-fachen Kartesischen Produkts
+M x...x M = $M^$n über M
+  n-mal
+
+Bsp.: a) M = \mathbb{N} = {0,1,2,...}
+		 $M^$3 = {(0,1,2),(0,0,0),(1,0,2),...}
+		 3-stellige Relation über \mathbb{N}:
+mult = {(0,0,0),(0,1,0),(1,0,0),(1,1,1),(1,2,2),(2,1,2),(2,2,4),...}
+	   {(x,y,z) \\x,y,z \in \mathbb{N}:Z=x*y}
+	   
+mult:\mathbb{N}X\mathbb{N}->\mathbb{N}		\mathbb{N}X\mathbb{N}X\mathbb{N}
+mult(x,y)->x*y
+
+Man kann jede Funktion als Relation darstellen, indem man ein Argument dazunimmt für den Funktionswert.
+Umgedreht geht es nicht, denn z.B.: (abraham,isaak) \in vater
+									(abraham,sarah) \in vater
+es kann mehrere Werte im rechten Argument zu gleichem Wert davor geben.
+		Funktion \rightarrow Relation <-Mächtiger
+				 \nleftarrow
+		Determinismus \subseteq Nichtdeterminismus
+		
+		
+Def.:
+b) Prädikat n-stelliges Prädikat über M ist eine Funktion P:$M^$n->{0,1}
+c) n-stelliges Prädikat P zur n-stellien Relation R
+   P(a1,...,an)=1 \Leftrightarrow (a1,...,an) \in R
+   
+ Folie 2: 4 Relationen : vater, mutter 2-stellig
+ 						 männlich, weiblich 1-stellig
+ 						 
+Syntax von Konstanten und Relationen;
+Zeichenfolge, die mit Kleinbuchstaben beginnen und aus Buchstaben, Ziffern und '_' bestehen kann
+
+Bsp.: meier, herr_schulze, u33, a2, vater, sarah, ...
+
+Unterscheidung durch Position;
+	außen\rightarrow Relation
+	innen\rightarrow Konstante
+	Später: Zahlen als Konstanten!
+	
+
+Anfragen (Queries):
+Fragt: (abraham,isaak) \in vater
+Wer sind Kinder von abraham?
+Müssten wir alle Kombinationen ?- vater(abraham,...) durchsuchen.
+\rotatebox[origin=c]{180}{$\Lsh$} Variablen
+Kann anstelle der Konstanten auch Variablen verwenden!
+Syntax von Variablen, wie Konstanten, aber mit Großbuchstaben oder '_' beginnen.
+
+Bsp.: X, Ergebnis, _x, _123, _
+							\nwarrow anonyme Variable (wird nur 1 mal gebraucht)
+
+Query:?- vater(terach,Z).
+Frage: Kinder von terach?
+Z=abraham;
+Z=nachor;
+Z=haran.
+
+Es wird nach einen Ersatz (Substitution) der Variablen in der Query gesucht, mit der man Elemente der Relation erhält.
+Wir schreiben statt Z = haran \rightarrow [Z/haran]
+?- vater(Z1,Z2)\rightarrow [Z1/terach, Z2/abraham]
+									.
+									.
+									.
+							[Z1/haran, Z2/yiscah]
+							
+Variablen in Queries sind existenz - quantifiziert
+
+Terme: die einzige Datenstruktur von Prolog
+Def.: (natürlich Zahl in Symbolischer Darstellung)
+		0\in \mathbb{N}:Konstante o
+		n\in \mathbb{N} \Rightarrow n+1\in \mathbb{N}: Funktor s 1-stelliger Funktor
+
+Bsp.: 3 = s(s(s(o)))
+
 \end{document}
