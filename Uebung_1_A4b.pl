@@ -1,5 +1,5 @@
 % Autor: Tobias Weitz
 % Datum: 06.10.2013
 
-null(o).
-um1erhöhen(s(X)).
+um1erhöhen(X,s(X)).
+plus(X,Y,s(X)) :- X<Y.
