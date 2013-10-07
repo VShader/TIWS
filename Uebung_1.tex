@@ -58,6 +58,7 @@ Aufgabe 4
 a) plus(X,Y,Z)
 	plus(0,0,0), plus(0,1,1), plus(1,0,1), plus(1,1,2), plus(1,2,3) ...
 	
-b) um1erhöhen(X,s(X))
-	%plus(X,Y,Z) : X+Y=Z
-	plus(X,Y,o) :- X<Y; plus(s(X),Y,Z)
+b) plus(o,o,o), plus(o,s(o),s(o)), plus(s(o),o,s(o)), plus(s(o),s(o),s(s(o))), plus(s(o),s(s(o)),s(s(s(o)))) ....
+
+c)Um die Relation aus a) vollständig zu beschreiben, müssen wir n-Elemente Angeben.
+  Es müssen n Prolog-Fakten angegeben werden um die Relation aus a) in Prolog darzustellen.
