@@ -10,49 +10,62 @@ b) Eine Ordnung geo ist dann gegeben wenn alle Elemente der Menge Millionenstäd
 Aufgabe 2
 a) A * \lnot A
 Kein Modell
-A	A * \lnot A
-0	0
-1	0
+\begin{tabular}{clr}
+A	& A * \lnot A \\
+falsch	& falsch \\
+wahr	& falsch \\
+\end{tabular}
 
 b) (A+B)*(\lnot A * \lnot B)
 Kein Modell
-A	B	A+B	\lnot A * \lnot B	(A+B)*(\lnot A * \lnot B)
-0	0	0	1	0
-0	1	1	0	0
-1	0	1	0	0
-1	1	1	0	0
+\begin{tabular}{clr}
+A	& B	& A+B	& \lnot A * \lnot B	& (A+B)*(\lnot A * \lnot B)\\
+falsch	& falsch	& falsch	& 1	& 0 \\
+falsch	& wahr	& wahr	& falsch	& falsch \\
+wahr	& falsch	& wahr	& falsch	& falsch \\
+wahr	& wahr	& wahr	& falsch	& falsch \\
+\end{tabular}
 
 c) (A+B)*(\lnot A + B)
 2 Modelle
-A	B	A+B	\lnot A + B	(A+B)*(\lnot A + B)
-0	0	0	1	0
-0	1	1	1	1
-1	0	1	0	0
-1	1	1	1	1
+\begin{tabular}{clr}
+A	& B	& A+B	& \lnot A + B	& (A+B)*(\lnot A + B) \\
+falsch	& falsch	& falsch	& wahr	& falsch \\
+falsch	& wahr	& wahr	& wahr	& wahr \\
+wahr	& falsch	& wahr	& falsch	& falsch \\
+wahr	& wahr	& wahr	& wahr	& wahr \\
+\end{tabular}
 
 d) (A+B)*(\lnot A + \lnot B)
 2 Modelle
-A	B	A+B	\lnot A + \lnot B	(A+B)*(\lnot A + \lnot B)
-0	0	0	1	0
-0	1	1	1	1
-1	0	1	1	1
-1	1	1	0	0
+\begin{tabular}{clr}
+A	& B	& A+B	& \lnot A + \lnot B	& (A+B)*(\lnot A + \lnot B) \\
+falsch	& falsch	& falsch	& wahr	& falsch \\
+falsch	& wahr	& wahr	& wahr	& wahr \\
+wahr	& falsch	& wahr	& wahr	& wahr \\
+wahr	& wahr	& wahr	& falsch	& falsch \\
+\end{tabular}
 
 
 Aufgabe 3
 a) -> kann als
-A	B	\lnot A * B	\lnot (\lnot A * B)
-0	0	0	1
-0	1	1	0
-1	0	0	1
-1	1	0	1
+\begin{tabular}{clr}
+A	& B	& \lnot A * B	& \lnot (\lnot A * B) \\
+falsch	& falsch	& falsch	& wahr \\
+falsch	& wahr	& wahr	& falsch \\
+wahr	& falsch	& falsch	& wahr \\
+wahr	& wahr	& falsch	& wahr \\
+\end{tabular}
 
 b) XOR kann als (A+B)*(\lnot A + \lnot B) dargestellt werden.
-A	B	A+B	\lnot A + \lnot B	(A+B)*(\lnot A + \lnot B)
-0	0	0	1	0
-0	1	1	1	1
-1	0	1	1	1
-1	1	1	0	0
+\begin{tabular}{clr}
+A	& B	& A+B	& \lnot A + \lnot B	& (A+B)*(\lnot A + \lnot B) \\
+falsch	& falsch	& falsch	& wahr	& falsch \\
+falsch	& wahr	& wahr	& wahr	& wahr \\
+wahr	& falsch	& wahr	& wahr	& wahr \\
+wahr	& wahr	& wahr	& falsch	& falsch \\
+\end{tabular}
+
 
 Aufgabe 4
 a) plus(X,Y,Z)
