@@ -1,0 +1,17 @@
+Terme: Die einzige Datenstruktur in Prolog
+Zusätzlich zu Konstanten und Variablen brauchen wir Funktoren (gleiche Syntax wie Relationen und Konstanten).
+
+Bsp. für Terme \mathbb{N} in symbolischer Notation.
+5 \rightarrow s(s(s(s(s(o))))) \rightarrow $s^$5(o)
+1-Stelliger Funktor \nearrow \uparrow Konstante
+
+Terme-Definition.:										Bsp.: Listen
+Induktionsanfang: - Jede Konstante c ist ein Term		nil
+				  - Jede Variable X ist ein Term		2-stelliger Funktor
+
+n \rightarrow n+1: - Für jeden n-stelligen Funktor f 	list
+und n Terme t1,...,tn ist f(t1,...,tn) ein Term.
+
+Term \rightarrow Baum
+Bsp. Konstanten a, b Variablen X Funktoren $h^$(3), $g^$(1), $f^$(2)
+$h^$(3)($g^$(1)($g^$(1)(a),$f^$(2)(X,b),$f^$(2)($f^$(2)(a,$g^$(1)(X)),b))
