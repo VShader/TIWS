@@ -1,0 +1,78 @@
+Aufgabe 5:
+
+mutter(hanna, silke).
+mutter(silke, anna).
+mutter(anna, sabrina).
+
+Aufgabe 6:
+
+a)
+
+% add(X,Y, E) :- E = X + Y
+add(X,o,X).
+add(X,s(Y),E):- add(s(X),Y,E).
+
+b)
+
+add(Z, s(o), s(s(o))). // Es gibt ein Z für das gilt Z + 1 = 2 Umformung: Z = 2 - 1
+
+c)
+
+add(Z,Z,s(s(o))).
+add(Z,Z,s(s(s(s(o))))). //Es gibt ein Z für das gilt Z + Z = 4 Umformung: 2Z = 4 |:2 -> Z = 2
+
+d)
+
+Im moment könnte unser Programm auch andere Darstellung verwenden, da wir dies noch nicht explizit unterbinden.
+Wir führen die natürlichen Zahlen in symbolischer Darstellung ein mit folgender Regel:
+
+natsymb(o).
+natsymb(s(X)) :- natsymb(X).
+
+neuer Fakt:
+
+add(X,o,X) :- natsymb(X).
+
+e)
+
+Aufgabe 7:
+
+a)
+
+f
+
+b)
+
+c)
+
+
+
+Aufgabe 8:
+
+a)
+
+eqZero(o).
+
+b)
+
+neqZero(s(o)).
+neqZero(s(X)) :-  neqZero(X).
+
+c)
+
+less(o,X) :- neqZero(X).
+less(s(X),s(Y)) :- less(X,Y).
+
+d)
+
+square(X,Y) :- mult(X,X,Y).
+
+Aufgabe 10:
+
+a)
+
+
+b)
+
+invList(nil). :- natsymb(X).
+invList(list(X,Y)) :- natsymb(X),invList(Y).

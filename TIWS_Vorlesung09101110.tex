@@ -15,3 +15,33 @@ und n Terme t1,...,tn ist f(t1,...,tn) ein Term.
 Term \rightarrow Baum
 Bsp. Konstanten a, b Variablen X Funktoren $h^$(3), $g^$(1), $f^$(2)
 $h^$(3)($g^$(1)($g^$(1)(a),$f^$(2)(X,b),$f^$(2)($f^$(2)(a,$g^$(1)(X)),b))
+
+Gesucht: baum: Terme \rightarrow Baum-Darstellung
+
+Induktionsanfang	baum(c)=c	Konstante c
+					baum(X)=X	Variable X
+					
+n \rightarrow n+1	baum(f(t1,...tn))	$f^(n)$ Funktor
+										t1,...,tn Terme
+										
+Wir suchen nach Substitutionen der Variablen in Query(Z,...), so dass Substitut in Relation.
+Def.: (Substitution)
+Eine Substitution ist eine endliche Menge (möglicherweise leer) von Paaren der Form Xi,ti, wobei Xi eine Variable ist und ti ein Term ist.
+Pro Substitution höchstens eine Substitution pro Variable geschrieben:[Z1/t1,...,Zn/tn]
+
+Bsp.: [Z1/sarah,Z2/isaak]
+
+Def.:(Anwendung einer Substitution und Instanz)
+Seien t ein Term und Sub eine Substitution.
+Das Ersetzten der Variablen durch die rechten Seiten der Substitution innerhalb von t heißt Anwendung von Sub auf t und wird geschrieben als tsub.
+tsub heißt spezieller als t oder Instanz von t.
+umgekehrt t allgemeiner als tsub.
+
+Bsp.: t=$s^5$(Y) sub=[Y/$s^7$(x)]
+		tsub=$s^5$($s^7$(x))=$s^12$(x)
+		-t=list(X,list(b,list(Y,Z)))
+		tsub=list(a,list(b,list(c,nil)))
+		sub=[X/a,Y/c,Z/nil]
+		
+Regeln: (braucht man meistens Induktionsvorschrift)
+Neben Fakten kann ein Prolog Programme auch Regeln enthalten.
