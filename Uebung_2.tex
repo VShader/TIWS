@@ -4,8 +4,8 @@ mutter(hanna, silke).
 mutter(silke, anna).
 mutter(anna, sabrina).
 
-Aufgabe 6:
 
+Aufgabe 6:
 a)
 
 % add(X,Y, E) :- E = X + Y
@@ -35,8 +35,8 @@ add(X,o,X) :- natsymb(X).
 
 e)
 
-Aufgabe 7:
 
+Aufgabe 7:
 a)
 
 f
@@ -48,24 +48,45 @@ c)
 
 
 Aufgabe 8:
-
 a)
 
 eqZero(o).
 
 b)
-
 neqZero(s(o)).
 neqZero(s(X)) :-  neqZero(X).
 
 c)
-
 less(o,X) :- neqZero(X).
 less(s(X),s(Y)) :- less(X,Y).
 
 d)
-
 square(X,Y) :- mult(X,X,Y).
+
+
+Aufgabe 9:
+a)
+%kante(X,Y): Es gibt eine Kante X nach Y
+kante(a,b).
+kante(a,c).
+kante(a,d).
+kante(a,e).
+kante(b,c).
+kante(b,d).
+kante(b,e).
+kante(c,e).
+kante(e,c).
+kante(e,d).
+ 
+b)
+%weg(X,Y):- 1, falls es enen Weg von X nach Y gibt(gegebenenfalls Länge 0)
+weg(X,Y).
+weg(X,Y) :- kante(X,H),weg(H,Y)
+
+c)
+%wegLänge(X,Y,Länge): gibt Weg von X nach Y der Länge Länge.
+wegLänge(X,X,o).
+wegLänge(X,Y,s(N)) :- kante(X,H),wegLänge(H,Y,N).
 
 Aufgabe 10:
 
