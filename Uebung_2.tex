@@ -1,50 +1,48 @@
 Aufgabe 5:
-
-mutter(hanna, silke).
-mutter(silke, anna).
-mutter(anna, sabrina).
-
+%sohn(X,Y): X ist sohn von Y.
+sohn(X,Y) :- kind(X,Y),männlich(X).
+%tochter(X,Y) X ist tochter von Y.
+tochter(X,Y) :- kind(X,Y),weiblich(X).
+%kind(X,Y) : X ist Kind von Y.
+kind(X,Y) :- vater(Y,X).
+kind(X,Y) :- mutter(Y,X).
 
 Aufgabe 6:
 a)
-
 % add(X,Y, E) :- E = X + Y
 add(X,o,X).
 add(X,s(Y),E):- add(s(X),Y,E).
 
 b)
-
 add(Z, s(o), s(s(o))). // Es gibt ein Z für das gilt Z + 1 = 2 Umformung: Z = 2 - 1
 
 c)
-
 add(Z,Z,s(s(o))).
 add(Z,Z,s(s(s(s(o))))). //Es gibt ein Z für das gilt Z + Z = 4 Umformung: 2Z = 4 |:2 -> Z = 2
 
 d)
-
 Im moment könnte unser Programm auch andere Darstellung verwenden, da wir dies noch nicht explizit unterbinden.
 Wir führen die natürlichen Zahlen in symbolischer Darstellung ein mit folgender Regel:
 
 natsymb(o).
 natsymb(s(X)) :- natsymb(X).
 
-neuer Fakt:
-
+%neuer Fakt:
 add(X,o,X) :- natsymb(X).
 
 e)
-
+mult(X,o,o).
+%mult(X,s(o),X).
+mult(X,s(Y),E) :- mult(X,Y,E),add(E,X,E).
 
 Aufgabe 7:
 a)
-
-f
+t1=X t2=a t3=f(Y,Z) t4=g(X) t5=f(g(g(f(a,Y))),f(g(X),a))
 
 b)
 
 c)
-
+h
 
 
 Aufgabe 8:
@@ -88,12 +86,10 @@ c)
 wegLänge(X,X,o).
 wegLänge(X,Y,s(N)) :- kante(X,H),wegLänge(H,Y,N).
 
+
 Aufgabe 10:
-
 a)
-
+natList(nil).
+natList(list(X,Y)) :- natsymb(X),invList(Y).
 
 b)
-
-invList(nil). :- natsymb(X).
-invList(list(X,Y)) :- natsymb(X),invList(Y).
