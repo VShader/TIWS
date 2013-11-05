@@ -1,0 +1,69 @@
+Übung 5:
+
+20)
+vater(abraham, isaak).
+vater(gott, X).
+?- vater(Z1, Z2).
+
+						vater(Z1,Z2)
+						/         \
+sub1[Z1/abraham, Z2/isaak]		sub1[Z1/gott, Z2/ZH1, ZH1/X]
+?-								?-
+
+
+21)
+ERROR: Out of local stack
+Exception: (493,205) sohn(isaak, abraham) ? 
+
+
+22)
+a)
+?- f(f(X,f(a,g(X))),g(f(b,Y))) = f(f(g(g(Z1)),Z2),g(f(Z3,f(Z3,a)))).
+X = g(g(_G571))
+Y = f(b, a)
+Z1 = _G571
+Z2 = f(a, g(g(g(_G571))))
+Z3 = b ;
+
+b)
+f(f(X,f(a,g(X))),g(f(b,X))) = f(f(g(g(Z1)),Z2),g(f(Z3,f(Z3,a)))).
+No
+
+c)
+Geht nicht weil, X nicht gleichzeitig g(X) sein kann. (kein Occur Check)
+
+
+23)
+app(Z1,Z2,Z2).
+
+app(nil,Xs,Xs).
+[Z1/nil,Z2/Xs].
+
+app(list(X,X1s),Ys,list(X,X2s)).
+[Z1/list(X,X1s),Z2/Ys,Ys/list(X,X2s)].
+
+
+24)
+
+						vater(Z1,Z2).
+						/
+sub1[Z1/abbraham,Z2/issak]
+?-
+
+
+25)
+Backtracking versucht aus Teillösungen eine Gesamtlösung zu bilden. Führt eine Teillösung nicht zum Endgültigen Ergebnis wird 
+der letzte Schritt zurückgenommen und stattdesen alternative Lösungswege ausprobiert, somit ist sichergestellt, dass alle in Frage 
+kommenden Lösungswege ausprobiert werden können.
+
+
+26)
+tree(a).
+tree(b).
+tree(c).
+%tree(X).
+%tree(Y).
+%tree(Z).
+tree(f(X,Y)) :- tree(X), tree(Y).
+tree(g(X)):- tree(X).
+tree(h(X,Y,Z)) :- tree(X), tree(Y), tree(Z).
