@@ -1,1 +1,46 @@
-Neben Arithmetik
+Neben Arithmetik spezielle Notation für Listen!
+
+list(1,list(2,list(3,nil)))
+								nicht mischen!!!
+[1|[2|[3|[]]]]
+
+Quicksort: Teile und Hersche / Divide and Conquer
+Anwendung: Generate & Test-Verfahren
+
+alle Permutationen			ist sortiert
+der Eingabe erzeugen
+
+psort([3,2,1],Zs) :- permutation([3,2,1]), ordered([3,2,1]) f
+					 permutation([3,1,2]), ordered([3,1,2]) f
+					 permutation([2,1,3]), ordered([2,1,3]) f
+					 permutation([2,3,1]), ordered([2,3,1]) f
+					 permutation([1,2,3]), ordered([1,2,3]) 
+					 permutation([1,3,2]), ordered([1,3,2]) f
+					 
+ordered([]).
+ordered([X]).
+ordered([X,Y|Xs]) :- X<Y, ordered([Y|Xs]).
+
+Schöne Anwendung: n-Damen-Problem!
+
+
+
+Kowalski-Idee: Programming = Logic + Control
+			   In Prolog verwirklicht?
+			   D.h. nur Logik angeben, keine Gedanken zur Auswertung
+			   D.h. sind "und" und "oder" kommutativ?
+
+Fakten- und Regelreihenfolge
+
+"oder" kommutativ?
+
+Bsp.:
+%istdrin(X,Xs): X ist in Liste Xs enthalten
+istdrin(X,[X|Xs]).
+istdrin(X,[_|Xs]) :- istdrin(X,Xs).
+
+
+
+%istdrin(X,Xs): X ist in Liste Xs enthalten
+istdrin(X,[_|Xs]) :- istdrin(X,Xs).
+istdrin(X,[X|Xs]).			   

@@ -86,7 +86,7 @@
      </g>
      <g class="com.sun.star.drawing.TextShape">
       <g id="id10">
-       <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="5350" y="6147"><tspan fill="rgb(0,0,0)" stroke="none">?- t,</tspan><tspan font-size="634px" fill="rgb(255,51,51)" stroke="none">!</tspan><tspan fill="rgb(0,0,0)" stroke="none">,f(o),c.</tspan></tspan></tspan></text>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="5350" y="6147"><tspan fill="rgb(0,0,0)" stroke="none">?- t,</tspan><tspan fill="rgb(255,51,51)" stroke="none">!</tspan><tspan fill="rgb(0,0,0)" stroke="none">,f(o),c.</tspan></tspan></tspan></text>
       </g>
      </g>
      <g class="com.sun.star.drawing.TextShape">
@@ -136,7 +136,7 @@
      </g>
      <g class="com.sun.star.drawing.TextShape">
       <g id="id20">
-       <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="6550" y="8247"><tspan fill="rgb(0,0,0)" stroke="none">?- w,</tspan><tspan font-size="634px" fill="rgb(255,51,51)" stroke="none">!</tspan><tspan fill="rgb(0,0,0)" stroke="none">,f(o),c.</tspan></tspan></tspan></text>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="6550" y="8247"><tspan fill="rgb(0,0,0)" stroke="none">?- w,</tspan><tspan fill="rgb(255,51,51)" stroke="none">!</tspan><tspan fill="rgb(0,0,0)" stroke="none">,f(o),c.</tspan></tspan></tspan></text>
       </g>
      </g>
      <g class="com.sun.star.drawing.ConnectorShape">
@@ -146,7 +146,7 @@
      </g>
      <g class="com.sun.star.drawing.TextShape">
       <g id="id22">
-       <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="2850" y="8197"><tspan fill="rgb(0,0,0)" stroke="none">?- </tspan><tspan font-size="634px" fill="rgb(255,51,51)" stroke="none">!</tspan><tspan fill="rgb(0,0,0)" stroke="none">,f(o),c.</tspan></tspan></tspan></text>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="2850" y="8197"><tspan fill="rgb(0,0,0)" stroke="none">?- </tspan><tspan fill="rgb(255,51,51)" stroke="none">!</tspan><tspan fill="rgb(0,0,0)" stroke="none">,f(o),c.</tspan></tspan></tspan></text>
       </g>
      </g>
      <g class="com.sun.star.drawing.ConnectorShape">
@@ -166,7 +166,7 @@
      </g>
      <g class="com.sun.star.drawing.TextShape">
       <g id="id26">
-       <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="15350" y="8447"><tspan fill="rgb(0,0,0)" stroke="none">?- w,</tspan><tspan font-size="634px" fill="rgb(255,51,51)" stroke="none">!</tspan><tspan fill="rgb(0,0,0)" stroke="none">,f(o).</tspan></tspan></tspan></text>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="15350" y="8447"><tspan fill="rgb(0,0,0)" stroke="none">?- w,</tspan><tspan fill="rgb(255,51,51)" stroke="none">!</tspan><tspan fill="rgb(0,0,0)" stroke="none">,f(o).</tspan></tspan></tspan></text>
       </g>
      </g>
      <g class="com.sun.star.drawing.ConnectorShape">
@@ -176,7 +176,7 @@
      </g>
      <g class="com.sun.star.drawing.TextShape">
       <g id="id28">
-       <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="12450" y="8297"><tspan fill="rgb(0,0,0)" stroke="none">?- </tspan><tspan font-size="634px" fill="rgb(255,51,51)" stroke="none">!</tspan><tspan fill="rgb(0,0,0)" stroke="none">,f(o).</tspan></tspan></tspan></text>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="12450" y="8297"><tspan fill="rgb(0,0,0)" stroke="none">?- </tspan><tspan fill="rgb(255,51,51)" stroke="none">!</tspan><tspan fill="rgb(0,0,0)" stroke="none">,f(o).</tspan></tspan></tspan></text>
       </g>
      </g>
      <g class="com.sun.star.drawing.ConnectorShape">
@@ -206,121 +206,127 @@
      </g>
      <g class="com.sun.star.drawing.TextShape">
       <g id="id34">
-       <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="6350" y="10497"><tspan fill="rgb(0,0,0)" stroke="none">?- w,</tspan><tspan font-size="634px" fill="rgb(255,51,51)" stroke="none">!</tspan><tspan fill="rgb(0,0,0)" stroke="none">,f(o),c.</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="6350" y="11921"><tspan fill="rgb(0,0,0)" stroke="none">endloser Ast</tspan></tspan></tspan></text>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="6350" y="10497"><tspan fill="rgb(0,0,0)" stroke="none">?- w,</tspan><tspan fill="rgb(255,51,51)" stroke="none">!</tspan><tspan fill="rgb(0,0,0)" stroke="none">,f(o),c.</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="6350" y="11921"><tspan fill="rgb(0,0,0)" stroke="none">unendlicher Ast</tspan></tspan></tspan></text>
       </g>
      </g>
      <g class="com.sun.star.drawing.ConnectorShape">
       <g id="id35">
-       <path fill="none" stroke="rgb(0,0,0)" d="M 8200,8700 L 8198,8727"/>
-       <path fill="none" stroke="rgb(0,0,0)" d="M 8156,9182 L 8154,9209"/>
-       <path fill="none" stroke="rgb(0,0,0)" d="M 8112,9664 L 8110,9691"/>
+       <path fill="none" stroke="rgb(0,0,0)" d="M 8200,8700 L 8208,8726"/>
+       <path fill="none" stroke="rgb(0,0,0)" d="M 8347,9161 L 8355,9187"/>
+       <path fill="none" stroke="rgb(0,0,0)" d="M 8493,9622 L 8502,9648"/>
       </g>
      </g>
      <g class="com.sun.star.drawing.TextShape">
       <g id="id36">
-       <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="15250" y="10410"><tspan fill="rgb(0,0,0)" stroke="none">?- w,</tspan><tspan font-size="634px" fill="rgb(255,51,51)" stroke="none">!</tspan><tspan fill="rgb(0,0,0)" stroke="none">,f(o).</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="15250" y="11834"><tspan fill="rgb(0,0,0)" stroke="none">endloser Ast</tspan></tspan></tspan></text>
+       <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="15250" y="10410"><tspan fill="rgb(0,0,0)" stroke="none">?- w,</tspan><tspan fill="rgb(255,51,51)" stroke="none">!</tspan><tspan fill="rgb(0,0,0)" stroke="none">,f(o).</tspan></tspan></tspan><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="635px" font-weight="400"><tspan class="TextPosition" x="15250" y="11834"><tspan fill="rgb(0,0,0)" stroke="none">unendlicher Ast</tspan></tspan></tspan></text>
       </g>
      </g>
      <g class="com.sun.star.drawing.ConnectorShape">
       <g id="id37">
-       <path fill="none" stroke="rgb(0,0,0)" d="M 16800,8900 L 16806,8926"/>
-       <path fill="none" stroke="rgb(0,0,0)" d="M 16916,9370 L 16922,9396"/>
+       <path fill="none" stroke="rgb(0,0,0)" d="M 16800,8900 L 16817,8921"/>
+       <path fill="none" stroke="rgb(0,0,0)" d="M 17102,9278 L 17119,9299"/>
+       <path fill="none" stroke="rgb(0,0,0)" d="M 17404,9656 L 17421,9677"/>
       </g>
      </g>
      <g class="com.sun.star.drawing.CustomShape">
       <g id="id38">
        <g>
         <defs>
-         <pattern id="pattern1" x="6100" y="6400" width="3901" height="6301" patternUnits="userSpaceOnUse">
-          <g transform="translate(-6100,-6400)">
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="6648" x2="6348" y2="6400"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="6948" x2="6648" y2="6400"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="7248" x2="6948" y2="6400"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="7548" x2="7248" y2="6400"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="7848" x2="7548" y2="6400"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="8148" x2="7848" y2="6400"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="8448" x2="8148" y2="6400"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="8748" x2="8448" y2="6400"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="9048" x2="8748" y2="6400"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="9348" x2="9048" y2="6400"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="9648" x2="9348" y2="6400"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="9948" x2="9648" y2="6400"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="10248" x2="9948" y2="6400"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="10548" x2="10000" y2="6648"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="10848" x2="10000" y2="6948"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="11148" x2="10000" y2="7248"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="11448" x2="10000" y2="7548"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="11748" x2="10000" y2="7848"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="12048" x2="10000" y2="8148"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="12348" x2="10000" y2="8448"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6100" y1="12648" x2="10000" y2="8748"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6348" y1="12700" x2="10000" y2="9048"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6648" y1="12700" x2="10000" y2="9348"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6948" y1="12700" x2="10000" y2="9648"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="7248" y1="12700" x2="10000" y2="9948"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="7548" y1="12700" x2="10000" y2="10248"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="7848" y1="12700" x2="10000" y2="10548"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="8148" y1="12700" x2="10000" y2="10848"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="8448" y1="12700" x2="10000" y2="11148"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="8748" y1="12700" x2="10000" y2="11448"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="9048" y1="12700" x2="10000" y2="11748"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="9348" y1="12700" x2="10000" y2="12048"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="9648" y1="12700" x2="10000" y2="12348"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="9948" y1="12700" x2="10000" y2="12648"/>
+         <pattern id="pattern1" x="6200" y="6800" width="4601" height="6301" patternUnits="userSpaceOnUse">
+          <g transform="translate(-6200,-6800)">
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="7048" x2="6448" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="7348" x2="6748" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="7648" x2="7048" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="7948" x2="7348" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="8248" x2="7648" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="8548" x2="7948" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="8848" x2="8248" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="9148" x2="8548" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="9448" x2="8848" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="9748" x2="9148" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="10048" x2="9448" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="10348" x2="9748" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="10648" x2="10048" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="10948" x2="10348" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="11248" x2="10648" y2="6800"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="11548" x2="10800" y2="6948"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="11848" x2="10800" y2="7248"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="12148" x2="10800" y2="7548"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="12448" x2="10800" y2="7848"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="12748" x2="10800" y2="8148"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6200" y1="13048" x2="10800" y2="8448"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6448" y1="13100" x2="10800" y2="8748"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="6748" y1="13100" x2="10800" y2="9048"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="7048" y1="13100" x2="10800" y2="9348"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="7348" y1="13100" x2="10800" y2="9648"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="7648" y1="13100" x2="10800" y2="9948"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="7948" y1="13100" x2="10800" y2="10248"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="8248" y1="13100" x2="10800" y2="10548"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="8548" y1="13100" x2="10800" y2="10848"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="8848" y1="13100" x2="10800" y2="11148"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="9148" y1="13100" x2="10800" y2="11448"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="9448" y1="13100" x2="10800" y2="11748"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="9748" y1="13100" x2="10800" y2="12048"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="10048" y1="13100" x2="10800" y2="12348"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="10348" y1="13100" x2="10800" y2="12648"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="10648" y1="13100" x2="10800" y2="12948"/>
           </g>
          </pattern>
         </defs>
-        <path style="fill:url(#pattern1)" d="M 8050,12700 L 6100,12700 6100,6400 10000,6400 10000,12700 8050,12700 Z"/>
+        <path style="fill:url(#pattern1)" d="M 8500,13100 L 6200,13100 6200,6800 10800,6800 10800,13100 8500,13100 Z"/>
        </g>
-       <path fill="none" stroke="rgb(52,101,175)" d="M 8050,12700 L 6100,12700 6100,6400 10000,6400 10000,12700 8050,12700 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 8500,13100 L 6200,13100 6200,6800 10800,6800 10800,13100 8500,13100 Z"/>
       </g>
      </g>
      <g class="com.sun.star.drawing.CustomShape">
       <g id="id39">
        <g>
         <defs>
-         <pattern id="pattern2" x="14900" y="6300" width="4001" height="6301" patternUnits="userSpaceOnUse">
-          <g transform="translate(-14900,-6300)">
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="6548" x2="15148" y2="6300"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="6848" x2="15448" y2="6300"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="7148" x2="15748" y2="6300"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="7448" x2="16048" y2="6300"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="7748" x2="16348" y2="6300"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="8048" x2="16648" y2="6300"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="8348" x2="16948" y2="6300"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="8648" x2="17248" y2="6300"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="8948" x2="17548" y2="6300"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="9248" x2="17848" y2="6300"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="9548" x2="18148" y2="6300"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="9848" x2="18448" y2="6300"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="10148" x2="18748" y2="6300"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="10448" x2="18900" y2="6448"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="10748" x2="18900" y2="6748"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="11048" x2="18900" y2="7048"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="11348" x2="18900" y2="7348"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="11648" x2="18900" y2="7648"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="11948" x2="18900" y2="7948"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="12248" x2="18900" y2="8248"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="14900" y1="12548" x2="18900" y2="8548"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15148" y1="12600" x2="18900" y2="8848"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15448" y1="12600" x2="18900" y2="9148"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15748" y1="12600" x2="18900" y2="9448"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="16048" y1="12600" x2="18900" y2="9748"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="16348" y1="12600" x2="18900" y2="10048"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="16648" y1="12600" x2="18900" y2="10348"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="16948" y1="12600" x2="18900" y2="10648"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="17248" y1="12600" x2="18900" y2="10948"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="17548" y1="12600" x2="18900" y2="11248"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="17848" y1="12600" x2="18900" y2="11548"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="18148" y1="12600" x2="18900" y2="11848"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="18448" y1="12600" x2="18900" y2="12148"/>
-           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="18748" y1="12600" x2="18900" y2="12448"/>
+         <pattern id="pattern2" x="15100" y="6600" width="4801" height="6301" patternUnits="userSpaceOnUse">
+          <g transform="translate(-15100,-6600)">
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="6848" x2="15348" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="7148" x2="15648" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="7448" x2="15948" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="7748" x2="16248" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="8048" x2="16548" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="8348" x2="16848" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="8648" x2="17148" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="8948" x2="17448" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="9248" x2="17748" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="9548" x2="18048" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="9848" x2="18348" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="10148" x2="18648" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="10448" x2="18948" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="10748" x2="19248" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="11048" x2="19548" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="11348" x2="19848" y2="6600"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="11648" x2="19900" y2="6848"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="11948" x2="19900" y2="7148"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="12248" x2="19900" y2="7448"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="12548" x2="19900" y2="7748"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15100" y1="12848" x2="19900" y2="8048"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15348" y1="12900" x2="19900" y2="8348"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15648" y1="12900" x2="19900" y2="8648"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="15948" y1="12900" x2="19900" y2="8948"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="16248" y1="12900" x2="19900" y2="9248"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="16548" y1="12900" x2="19900" y2="9548"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="16848" y1="12900" x2="19900" y2="9848"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="17148" y1="12900" x2="19900" y2="10148"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="17448" y1="12900" x2="19900" y2="10448"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="17748" y1="12900" x2="19900" y2="10748"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="18048" y1="12900" x2="19900" y2="11048"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="18348" y1="12900" x2="19900" y2="11348"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="18648" y1="12900" x2="19900" y2="11648"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="18948" y1="12900" x2="19900" y2="11948"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="19248" y1="12900" x2="19900" y2="12248"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="19548" y1="12900" x2="19900" y2="12548"/>
+           <line fill="rgb(255,211,32)" stroke="rgb(255,211,32)" x1="19848" y1="12900" x2="19900" y2="12848"/>
           </g>
          </pattern>
         </defs>
-        <path style="fill:url(#pattern2)" d="M 16900,12600 L 14900,12600 14900,6300 18900,6300 18900,12600 16900,12600 Z"/>
+        <path style="fill:url(#pattern2)" d="M 17500,12900 L 15100,12900 15100,6600 19900,6600 19900,12900 17500,12900 Z"/>
        </g>
-       <path fill="none" stroke="rgb(52,101,175)" d="M 16900,12600 L 14900,12600 14900,6300 18900,6300 18900,12600 16900,12600 Z"/>
+       <path fill="none" stroke="rgb(52,101,175)" d="M 17500,12900 L 15100,12900 15100,6600 19900,6600 19900,12900 17500,12900 Z"/>
       </g>
      </g>
      <g class="com.sun.star.drawing.CustomShape">
