@@ -1,3 +1,5 @@
+\usepackage{ wasysym 
+
 Neben Arithmetik spezielle Notation für Listen!
 
 list(1,list(2,list(3,nil)))
@@ -14,7 +16,7 @@ psort([3,2,1],Zs) :- permutation([3,2,1]), ordered([3,2,1]) f
 					 permutation([3,1,2]), ordered([3,1,2]) f
 					 permutation([2,1,3]), ordered([2,1,3]) f
 					 permutation([2,3,1]), ordered([2,3,1]) f
-					 permutation([1,2,3]), ordered([1,2,3]) 
+					 permutation([1,2,3]), ordered([1,2,3]) \checked
 					 permutation([1,3,2]), ordered([1,3,2]) f
 					 
 ordered([]).
@@ -30,6 +32,7 @@ Kowalski-Idee: Programming = Logic + Control
 			   D.h. nur Logik angeben, keine Gedanken zur Auswertung
 			   D.h. sind "und" und "oder" kommutativ?
 
+
 Fakten- und Regelreihenfolge
 
 "oder" kommutativ?
@@ -40,7 +43,93 @@ istdrin(X,[X|Xs]).
 istdrin(X,[_|Xs]) :- istdrin(X,Xs).
 
 
+BILD: Bild_Baum_istdrin1
+
 
 %istdrin(X,Xs): X ist in Liste Xs enthalten
 istdrin(X,[_|Xs]) :- istdrin(X,Xs).
-istdrin(X,[X|Xs]).			   
+istdrin(X,[X|Xs]).
+
+BILD: Bild_Baum_istdrin2		   
+
+Bei Vertauschung von Regel/Klausel wird Baum gespiegelt!!!
+Problem: \infty Äste von rechts nach links!
+Struktur der Äste ändert sich nicht, d.h.:
+alle Äste bleiben erhalten und behalten gleiche Länge
+\Leftrightarrow endliche Bäume bleiben endlich und \infty Bäume bleiben \infty
+
+
+Prädikatreihenfolge in Queries und rechten Regelseiten "und" Kommutativ?
+
+Hierbei kann die Struktur verändert werden,
+d.h. Äste können
+- wegfallen
+- hinzukommen
+- länger werden
+- kürzer werden
+
+Bsp.: Folie: 5, Seite: 8
+
+
+BILD: noch zu machen!!!!
+
+
+
+
+
+
+
+
+
+
+
+Endlicher Baum wird breiter, bleibt aber endlich, Suchraum größer aber es wird alles gefunden!
+Schlimmer, wenn \infty Äste reinkommen!
+
+
+%elter(X,Y): X ist Elternteil von Y
+%vorfahre(X,Y): X ist Vorfahre von Y
+
+Transitiver Abschluss von elter
+vorfahre(X,Y) :- elter(X,Y).
+vorfahre(X,Y) :- elter(X,R),vorfahre(R,Y).
+
+Allgemein: Transitiver Abschluss transvonrel(X,Y) einer Relation rel(X,Y).:
+transvonrel(X,Y) :- rel(X,Y).
+transvonrel(X,Y) :- rel(X,R), transvonrel(R,Y).
+
+Transitiver Abschluss: mindestens 1 Schritt der Ursprungsrelation.
+Transitiver Reflexiver Abschluss: auch kein Schritt der Ursprungsrelation erlaubt.
+
+Bsp.: Weg ist transitiv-reflexiver Abschluss von Kante!
+Allgemein: Transitiv-reflexiver Abschluss einer Relation rel(X,Y).
+rel(X,Y).
+transrefvonrel(X,Y).
+
+weg(X,X).
+weg(X,Y) :- kante(X,R), weg(R,Y).
+
+transrefvonrel(X,X).
+transrefvonrel(X,Y) :- rel(X,R),transrefvonrel(R,Y).
+
+
+
+Explizite Backtrackingkontrolle mittels der Atomformel Cut.
+
+Nullstellige Relationen werden ohne Klammer geschrieben.
+Bsp.: Folie: 5, Seite: 9
+
+
+
+BILD: Bild_Baum_Folie_5.9
+
+
+
+Semantik des Cuts '!'
+- tritt nur auf rechten Regelseiten auf
+- ist erfolgreich
+- schneidet beim Backtracken alle Alternativen von den Prädikaten ab, die in seiner Regel links von ihm stehen.
+
+
+
+BILD: Bild_Cut_Folie_5.10
