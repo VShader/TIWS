@@ -1,4 +1,4 @@
-\usepackage{ wasysym 
+\usepackage{ wasysym }
 
 Neben Arithmetik spezielle Notation für Listen!
 
@@ -56,7 +56,7 @@ Bei Vertauschung von Regel/Klausel wird Baum gespiegelt!!!
 Problem: \infty Äste von rechts nach links!
 Struktur der Äste ändert sich nicht, d.h.:
 alle Äste bleiben erhalten und behalten gleiche Länge
-\Leftrightarrow endliche Bäume bleiben endlich und \infty Bäume bleiben \infty
+\Rightarrow endliche Bäume bleiben endlich und \infty Bäume bleiben \infty
 
 
 Prädikatreihenfolge in Queries und rechten Regelseiten "und" Kommutativ?
@@ -83,7 +83,7 @@ BILD: noch zu machen!!!!
 
 
 
-Endlicher Baum wird breiter, bleibt aber endlich, Suchraum größer aber es wird alles gefunden!
+Endlicher Baum wird viel breiter, bleibt aber endlich, Suchraum größer aber es wird alles gefunden!
 Schlimmer, wenn \infty Äste reinkommen!
 
 
@@ -103,15 +103,12 @@ Transitiver Reflexiver Abschluss: auch kein Schritt der Ursprungsrelation erlaub
 
 Bsp.: Weg ist transitiv-reflexiver Abschluss von Kante!
 Allgemein: Transitiv-reflexiver Abschluss einer Relation rel(X,Y).
-rel(X,Y).
-transrefvonrel(X,Y).
-
-weg(X,X).
-weg(X,Y) :- kante(X,R), weg(R,Y).
-
 transrefvonrel(X,X).
 transrefvonrel(X,Y) :- rel(X,R),transrefvonrel(R,Y).
 
+Bsp.:
+weg(X,X).
+weg(X,Y) :- kante(X,R), weg(R,Y).
 
 
 Explizite Backtrackingkontrolle mittels der Atomformel Cut.
