@@ -1,0 +1,38 @@
+Übung: 7
+
+Aufgabe: 34
+members(X,[X|Ys]).
+members(X,[Y|Ys]) :- members(X,Ys).
+
+add_el(X,Ls,Rs) :- members(X,Ls), !, app([],Ls,Rs).
+add_el(X,Ls,Rs) :- app([X],Ls,Rs).
+
+
+Aufgabe: 35
+a) Steht der Cut am Anfang der rechten Regelseite, werden alle Alternativen zu q1() bis qm() 
+	weggeschnitten.
+b) Steht der Cut am Ende der rechten Regelseite, kann er nur dann das Backtracken verhindern, 
+	wenn die vorherigen Bedingungen erfolgreich waren.
+
+	
+Aufgabe: 36
+Grüner Cut siehe Aufgabe 34.
+Roter Cut add_el(X,Ls,Rs) :- !, member(X,Ls), app([],Ls,Rs).
+		  add_el(X,Ls,Rs) :- app([X],Ls,Rs).
+
+		  
+Aufgabe: 37
+a) \sum römisch ={I,V,X,L,C}
+b) CCCXCIX = 399
+c) Wörter={I,II,III,IV,V}
+d) keineWörter={IIII,IIV,VIIII,IIX,XIIII}
+e) CXLIV = 144
+
+
+Aufgabe: 38
+a) Informatik, Computer, Rechner
+b) compare, Byrne, Buhter
+c) Ich esse eine Byrne.
+d) Ich esse Birne.
+e) Die Informatik ist eine Wissenschaft für sich.
+f) Nachts ist es kälter als draußen.
