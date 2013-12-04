@@ -1,0 +1,27 @@
+Weder "oder" Regelreihenfolge Struktur bleibt erhalten
+noch "und" Prädikatreihenfolge Kann alles passieren.
+sind Kommutativ.
+
+Heuristik:
+1.
+Fakten nach vorne, weil Query verkürzt wird.
+Bsp.: add & app: Wenn Regel vorne muss 1. oder 3. Argument vollinstanziert sein.
+
+2.
+Sorge für frühere Instanzierung
+Bsp.: invlist rechte Seite.
+
+3.
+In verkürzenden Argumenten keine Variablen
+
+4.
+Möglichst Linksrekursion verhindern
+d.h.: rekursiver Aufruf möglichst weit nach rechts auf der rechten Seite!!!
+
+
+
+Regel von add:
+Verkürzende Argumente: 1. & 3.
+?- add(Z1,s(o),Z2).
+mit Regel: [Z1/s(Z3), X/Z3, Y/s(o), Z2/s(Z4), R/Z4]
+?- add(Z3,s(o),Z4).

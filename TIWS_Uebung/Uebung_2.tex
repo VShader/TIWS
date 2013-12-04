@@ -90,6 +90,10 @@ wegLänge(X,Y,s(N)) :- kante(X,H),wegLänge(H,Y,N).
 Aufgabe 10:
 a)
 natList(nil).
-natList(list(X,Y)) :- natsymb(X),invList(Y).
+natList(list(X,Y)) :- natsymb(X),natList(Y).
 
 b)
+invList(list(o,nil)).
+invList(list(s(X),Y)) :- natsymb(X), invList(list(X,Y)).
+invList(list(s(X),list(X,Y))) :- natsymb(X), invList(list(X,Y)).
+invList(nil).

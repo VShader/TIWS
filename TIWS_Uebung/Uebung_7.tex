@@ -1,5 +1,17 @@
 Übung: 7
 
+Aufgabe: 33
+a) app mit Variablen im 1. & 3. Argument \infty Rechnung
+Bei vollständig instantiiertem 1. Argument wird dieses bei Regelanwendung um 1 verkürzt \Rightarrow irgendwann ist die Liste im 1. Argument leer \Rightarrow Fakt wird angewendet.
+\Rightarrow Hs ist vor Aufruf von app vollständig instantiiert.
+\Rightarrow Stopp!
+
+b) Ja, da in der Querry alles vollinstantiiert, liefert der Aufruf des 1. apps einen endlichen Teilbaum, da das 3. Argument vollinstantiiert ist.
+Das 2. app liefert ebenfalls einen endlichen Teilbaum, da das 3. Argument durch das 1. app vollinstantiiert ist.
+
+c) \infty , da nur 2. Argument im 1. app vollinstantiiert!
+
+
 Aufgabe: 34
 members(X,[X|Ys]).
 members(X,[Y|Ys]) :- members(X,Ys).
@@ -7,16 +19,23 @@ members(X,[Y|Ys]) :- members(X,Ys).
 add_el(X,Ls,Rs) :- members(X,Ls), !, app([],Ls,Rs).
 add_el(X,Ls,Rs) :- app([X],Ls,Rs).
 
+besser :
+
+add_el(X,Ls,Ls) :- members(X,Ls), !.
+add_el(X,Ls,[X|Ls]).
+
 
 Aufgabe: 35
-a) Steht der Cut am Anfang der rechten Regelseite, werden alle Alternativen zu q1() bis qm() 
-	weggeschnitten.
-b) Steht der Cut am Ende der rechten Regelseite, kann er nur dann das Backtracken verhindern, 
-	wenn die vorherigen Bedingungen erfolgreich waren.
+a) Steht der Cut am Anfang der rechten Regelseite, werden nur Alternativen von p() 
+	weggeschnitten. \Rightarrow es kann mehrere Lösungen geben.
+b) Steht der Cut am Ende der rechten Regelseite, werden alle Alternativen von p,g1,..,gn abgeschnitten.
 
 	
 Aufgabe: 36
 Grüner Cut siehe Aufgabe 34.
+ist deterministisch \Rightarrow es kann nur 1 Lösung geben.
+alternativ: man kommt zu !, wenn member() = true \Rightarrow dann gilt 2. app nicht, d.h. man kann nur aus einer Regel Lösung bekommen.
+
 Roter Cut add_el(X,Ls,Rs) :- !, member(X,Ls), app([],Ls,Rs).
 		  add_el(X,Ls,Rs) :- app([X],Ls,Rs).
 

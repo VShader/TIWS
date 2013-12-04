@@ -8,5 +8,5 @@ app([],Xs,Xs).
 members(X,[X|Ys]).
 members(X,[Y|Ys]) :- members(X,Ys).
 
-add_el(X,Ls,Rs) :- members(X,Ls), !, app([],Ls,Rs).
+add_el(X,Ls,Rs) :- !, members(X,Ls), app([],Ls,Rs).
 add_el(X,Ls,Rs) :- app([X],Ls,Rs).
