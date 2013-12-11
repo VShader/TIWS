@@ -1,6 +1,5 @@
-#include <iostream>
-#include <string>
-using namespace std;
+#include <stdio.h>
+#include <stdbool.h>
 
 bool checkAlphabet(char character);
 void checkWord(char word[]);
@@ -37,7 +36,7 @@ void checkWord(char word[])
 	{
 		if(!checkAlphabet(word[i]))
 		{
-			std::cout << word[i] << " in " << word << " is not a valid character in Alphabet ab" << std::endl; 
+			printf("%c in %s is not a valid character in Alphabet ab\n", word[i], word);
 			return;
 		}
 		
@@ -79,10 +78,11 @@ void checkWord(char word[])
 		break;
 		
 		default:
-		std::cerr << "ERROR: Wrong State:\n" << state << " is not a valid state!!!" << std::endl;
+		printf("ERROR: Wrong State:\n %d is not a valid state!!!", state);
+		break;
 		}
 	}
-	if(state == 6) std::cout << word << std::endl;
-	else std::cout << word << " is not a vaild word, max state is: " << state << std::endl;
+	if(state == 6) printf("%s \n", word);
+	else printf("%s is not a vaild word, max state is: %d \n",word, state);
 }
 
