@@ -7,18 +7,19 @@ end tack nach end tick
 end tick nach end tack
 
 c)
-(tick,tack)*+tick*
+(ticktack)^+ (tick|ew)
 
 
 Aufgabe 55:
 a)
-(a^+)(b^+)(c^+)
+((a|b|c)^* a (a|b|c)^* b (a|b|c)^* |
+(a|b|c)^* b (a|b|c)^* a (a|b|c)^*)
 
 b)
-*1(0|1)(0|1)
+(0|1)^* 1(0|1)(0|1)
 
 c)
-*(1)(1)*
+(0|1)^*(11)(0|1)^*
 
 d)
 start 0
@@ -36,25 +37,26 @@ f)
 
 
 Aufgabe 56:
-a) Ja
-b) Nein
-c) Ja
-d) Nein
-e) Ja
-f) Ja
-g) Nein
-h) Nein
+(a|aaa)(b^k baa)^n b^m
+a) Ja, 3a's, n=1, k=0, m=0
+b) Nein, weil es mit b anfängt
+c) Ja, 1a, n=2, m=2, k1=0, k2=1
+d) Nein, da nach 1.b nur 1a kommt
+e) Ja, 1a, n=0, m=0
+f) Ja, 1a, n=0, m=1
+g) Nein, da mindestens 1a vorher sein muss
+h) Nein, siehe d)
 
 
 Aufgabe 57:
-a) Nein
-b) Ja
-c) Nein
-d) Nein
+a) Nein, ab wird links erzeugt aber nicht rechts
+b) Ja, (a|b) = (b|a) und X^* = X^* X^*
+c) Nein, da \epsilon nur links erzeugt wird
+d) Nein, da ab nur links erzeugt wird
 
 
 Aufgabe 58:
-a) *+(aba)+*
+a) (a|b)^* (aba) (a|b)^*
 
 
 Aufgabe 60:
@@ -62,11 +64,9 @@ a)
 abbabb, aabbbabaabb, bbbabbbaabb
 
 b)
-(a|b)*+ab+(a|b)*+ba+(a|b)*+bb+(a|b)*
+(a|b)^* ab (a|b)^* ba (a|b)^* bb (a|b)^*
 
 c)
-Lese ein Wort und wechsle Zustand wenn Bedingung erfüllt ist, sonst bleib im aktuellen Zustand.
-Beachte bei Zustand 5 wenn Buchstabe nicht b ist springe zu Zustand 4.
-Das Wort ist gültig wenn der Endzustand erreicht wurde und alle Buchstaben gültig waren.
+Mache aus RA mit Kleene NEA, daraus mit PMK DEA und lass dazu C-Programm erzeugen.
 
 d) und e) siehe Anhang.
