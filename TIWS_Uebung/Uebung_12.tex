@@ -13,6 +13,11 @@ b)
  ab		  bc
  
 c)
+G ist Typ 3.
+
+d)
+L(G) ist Typ 3 da G Typ 3 und L
+durch regulären Ausdruck abc beschrieben werden kann und endlich ist.
 
 
 Aufgabe 68:
@@ -29,3 +34,33 @@ A->abS,			5
 G ist eine rechtslineare Typ 3 Grammatik.
 aabbaa wird erzeugt durch:
 S =3> aA =5> aabS =2> aabbaaS =1> aabbaa
+
+
+Aufgabe 69:
+G=(S, \Sigma, S, P)
+P={
+S->\epsilon,
+S->aSB
+}
+
+M=({z0, z1}, \Sigma, \Gamma, \Delta, z0, #)
+\Delta ={
+(z,0,0,\epsilon)
+()
+}
+
+
+Aufgabe 71:
+a) <var> ::= <var1> +
+	 --------->
+var-|
+     -|var1|-->
+
+b) <var> ::= <var1> ?
+
+
+Aufgabe 72:
+a)
+Fakt::='a-z''A-Z'^*|'a-z'* | '(' 
+
+Regel::= Fakt '.' | 
