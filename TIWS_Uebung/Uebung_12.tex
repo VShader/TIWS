@@ -66,6 +66,13 @@ var-|
 
 Aufgabe 72:
 a)
-Fakt::='a-z''A-Z'^*|'a-z'* | '(' 
+Fakt ::= Konstante, '(', (Term | Funktor)+ ')' 
 
-Regel::= Fakt '.' | 
+Regel ::= Fakt, ('.' | ":-", Fakt+, '.')
+
+Term ::= (Konstante | Variable)+,Term?
+
+Konstante ::= 'a-z', ('A-Z'|'a-z')^*
+Variable ::= 'A-Z', ('A-Z'|'a-z')^*
+Funktor ::= Konstante, '(', Term, ')'
+Question ::= Regel
