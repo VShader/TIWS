@@ -1,0 +1,64 @@
+Uebung 13.
+
+Aufgabe 77:
+a)
+Zwei Grammatiken sind equivalent wenn alle Wörter der Grammatik G1 in G2 vorkommen
+und keine Weiteren.
+
+b)
+\Sigma Bin ={0,1} G1=(S, \Sigma Bin, S, P) 
+P1={
+S->\epsilon,
+S->0S01
+}
+
+G2=({S, A}, \Sigma Bin, S, P)
+P2={
+S->\epsilon,
+S->0SA,
+A->01
+}
+
+
+Aufgabe 78:
+a)
+PCP mit nur einem Buchstaben
+((1,1),(1,11),(11,1))
+ja
+
+b)Es muss ein Wortpaar geben das gleichlang ist oder es muss zu einem Wortpaar das ungleich lang ist ein Gegenstück geben bei dem u und v vertauscht sind.
+
+c)
+siehe a) Mögliche Lösung sind 1, 2.3, 2.1.3, 1.2.1.3.1 ...
+
+
+Aufgabe 79:
+a) ((011,0101),(01,0),(01,101))
+11 011011\neq 01010101
+23 0101 = 0101
+
+b) ((01,001),(01,100),(0,11))
+Es kann keine Indexfolge geben, da 
+
+
+Aufgabe 80:
+a)
+Die Wortpaare lassen sich als struct arrays darstellen.
+struct Pair{
+char u[];
+char v[];
+};
+Mit 2 Schleifen, eine um die anzahl der Wörter zu erhöhen und eine um die Wörte zuverbinden.
+Bsp.: Prüfe 1 Wort
+Pair words[];
+for(int i=0; i<WordSize; ++i) check(words, i);
+
+Bei 2 Wörter
+Pair words[];
+for(int i=0; i<WordSize; ++i) check(words, i);
+
+int wcount=1;
+while(true)
+{
+}
+b) Es lohnt sich nur Wortpaare zu untersuchen, die Gleichgroß sind.
