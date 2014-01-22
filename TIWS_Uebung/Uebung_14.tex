@@ -1,0 +1,47 @@
+Uebung 14:
+
+Aufgabe 42:
+a) Lww = {w,A \element \Sigma ww, : \forall w = AA}
+
+b)
+G = (S, \Sigma ww, S, P)
+P = {
+	S->\epsilon
+	SS->aS,
+	SS->bS
+	}
+	
+Aufgabe 59:
+a)
+rechts-linear, kontext-frei, regulär
+
+b)
+G Uhr = ({S,I,A},  \Sigma Uhr , S, P) mit
+P = {  S -> tick I  ,
+		I -> tack A  , 
+		I -> tack  ,
+		A -> tick I  , 
+		A -> tick  }
+
+DEA = ({S,I,A},  \Sigma Uhr , S, \delta, {I,A})
+\delta = {
+	S-> tick I,
+	I -> tack A  , 
+	I -> tack  ,
+	A -> tick I  , 
+	A -> tick
+}
+
+c) Der EA ist Nichtdeterministisch.
+
+d) Die Potenzmengenkonstruktion
+
+e)
+DEA = ({S,I,A},  \Sigma Uhr , S, \delta, {I,A})
+\delta = {
+	S-> tick I,
+	I -> tack A  , 
+	I -> tack  ,
+	A -> tick I  , 
+	A -> tick
+}
